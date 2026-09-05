@@ -1,10 +1,13 @@
 # Full Stack FastAPI Template Layout Review
 
+**Document type:** Implementation-layout case study
 **Status:** Completed implementation-layout reference
 
 **Reviewed:** 2026-09-02
 
 **Source revision:** [`cb740b6`](https://github.com/fastapi/full-stack-fastapi-template/tree/cb740b656d7a0a6c5e12c7bf8e50343ec94ee9c7)
+
+**Used by:** [Recommended spec-driven document layout](../reports/recommended-layout.md)
 
 ## Why This Source Matters
 

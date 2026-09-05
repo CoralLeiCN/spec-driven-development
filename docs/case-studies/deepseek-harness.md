@@ -1,9 +1,13 @@
 # DeepSeek Harness Review
 
+**Document type:** Workflow case study
 **Status:** Completed source review
 
 **Reviewed:** 2026-08-22
 **Source:** [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
+
+**Used by:** [Case study synthesis](../reports/case-study-synthesis.md) and
+[common-pattern report](../reports/common-patterns.md)
 
 ## Scope
 

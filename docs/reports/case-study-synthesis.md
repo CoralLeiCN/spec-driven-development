@@ -1,16 +1,17 @@
-# Research Review and Synthesis
+# Case Study Synthesis
 
+**Document type:** Cross-case report
 **Status:** Completed research informing the current layout recommendation
 **Reviewed:** 2026-09-02
 
-## Review Scope
+## Evidence Inputs and Scope
 
-The research is split into focused reviews so that observations, recommendations, and limitations remain attributable to the source that supports them:
+This report synthesizes four workflow case studies. Each source-specific analysis remains separate so its observations, recommendations, and limitations stay attributable:
 
-- [Agent Rumble](agent-rumble.md)
-- [DeepSeek Harness](deepseek-harness.md)
-- [OpenAI harness guidance](openai-harness-guidance.md)
-- [Stripe Sync Engine](stripe-sync-engine.md)
+- [Agent Rumble](../case-studies/agent-rumble.md)
+- [DeepSeek Harness](../case-studies/deepseek-harness.md)
+- [OpenAI harness guidance](../case-studies/openai-harness-guidance.md)
+- [Stripe Sync Engine](../case-studies/stripe-sync-engine.md)
 
 The cross-study conclusions are developed in [Common patterns across the four studies](common-patterns.md).
 
@@ -21,8 +22,8 @@ explains the guardrails adopted in the reusable agent template.
 
 The Agent Rumble review uses local commit [`56024b7`](https://github.com/CoralLeiCN/Agent-Rumble/tree/56024b70244ff4f76ff137a37360a9d422c09471). The Stripe Sync Engine review uses commit [`93321ab`](https://github.com/stripe/sync-engine/tree/93321ab3644d5460213725abe0595247c403eb46). DeepSeek Harness and the online OpenAI material were reviewed as available on 2026-08-22. Each review distinguishes practices worth adopting from context-specific choices that should not be copied automatically.
 
-The [Full Stack FastAPI Template layout review](full-stack-fastapi-template.md)
-is an additional implementation-layout reference, not a fifth workflow case
+The [Full Stack FastAPI Template layout case study](../case-studies/full-stack-fastapi-template.md)
+is an additional implementation-layout study, not a fifth workflow case
 study. It records the `backend/`, `frontend/`, package, generated-contract,
 testing, and root orchestration boundaries observed at upstream commit
 [`cb740b6`](https://github.com/fastapi/full-stack-fastapi-template/tree/cb740b656d7a0a6c5e12c7bf8e50343ec94ee9c7)
@@ -58,7 +59,7 @@ The strongest combined design is a hybrid:
 11. Treat agent-assisted repository audits as a useful recurring feedback loop, but keep normative metadata, traceability, generated artifacts, and architecture boundaries under deterministic checks.
 12. Require specification readiness before implementation when prior agreement matters; a plan committed alongside code is supporting explanation, not evidence of spec-first authorization.
 
-This synthesis is implemented in the [recommended spec-driven document layout](../recommended-layout.md).
+This synthesis is implemented in the [recommended spec-driven document layout](recommended-layout.md).
 
 ## Supporting Sources
 

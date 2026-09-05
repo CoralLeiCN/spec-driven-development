@@ -1,7 +1,13 @@
 # Recommended Spec-Driven Document Layout
 
+**Document type:** Recommendation report
 **Status:** Recommended template design
 **Updated:** 2026-09-02
+
+**Evidence basis:** [Case study synthesis](case-study-synthesis.md),
+[common-pattern report](common-patterns.md),
+[Full Stack FastAPI layout study](../case-studies/full-stack-fastapi-template.md),
+and [GPT-5.6 Sol supporting report](gpt-5.6-sol-agent-guidance.md)
 
 ## Purpose
 
@@ -20,7 +26,7 @@ The design has four boundaries:
 4. **Execution and evidence** make work resumable and completion auditable.
 
 `AGENTS.md` is a small operating map across these artifacts, not a duplicate of
-them. Start from [`agents-template.md`](../agents-template.md).
+them. Start from [`agents-template.md`](../../agents-template.md).
 
 ## Core Layout
 
@@ -79,7 +85,7 @@ FastAPI organization's
 as the default implementation layout. The recommendation is based on upstream
 revision [`cb740b6`](https://github.com/fastapi/full-stack-fastapi-template/tree/cb740b656d7a0a6c5e12c7bf8e50343ec94ee9c7),
 reviewed on 2026-09-02. See the
-[attributed layout review](research/full-stack-fastapi-template.md) for the
+[attributed layout case study](../case-studies/full-stack-fastapi-template.md) for the
 complete observations and source links.
 
 ```text
@@ -279,7 +285,7 @@ procedure, result, revision/date, and evidence location. It also records quality
 gates, authorized waivers, residual risk, rollout evidence, and follow-ups. Do
 not claim a check passed unless it ran successfully in the stated environment.
 
-Use the concrete files in [`templates/`](../templates/).
+Use the concrete files in [`templates/`](../../templates/).
 
 ## Lifecycle and Approval
 
@@ -403,7 +409,7 @@ For an autonomous coding model:
 
 These constraints are intentionally model-agnostic. The supporting rationale
 for GPT-5.6 Sol is in
-[`research/gpt-5.6-sol-agent-guidance.md`](research/gpt-5.6-sol-agent-guidance.md).
+[`gpt-5.6-sol-agent-guidance.md`](gpt-5.6-sol-agent-guidance.md).
 
 ## Mechanical Checks
 

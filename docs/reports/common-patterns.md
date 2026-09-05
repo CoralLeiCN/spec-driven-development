@@ -1,11 +1,12 @@
 # Common Patterns Across the Four Studies
 
+**Document type:** Cross-case report
 **Status:** Completed cross-study synthesis
 **Reviewed:** 2026-08-31
 
 ## Scope
 
-This synthesis compares [Agent Rumble](agent-rumble.md), [DeepSeek Harness](deepseek-harness.md), [OpenAI harness guidance](openai-harness-guidance.md), and [Stripe Sync Engine](stripe-sync-engine.md). It identifies practices supported across the studies, distinguishes them from promising practices that are not yet universal, and translates the common ground into a minimum reusable project structure.
+This synthesis compares [Agent Rumble](../case-studies/agent-rumble.md), [DeepSeek Harness](../case-studies/deepseek-harness.md), [OpenAI harness guidance](../case-studies/openai-harness-guidance.md), and [Stripe Sync Engine](../case-studies/stripe-sync-engine.md). It identifies practices supported across the studies, distinguishes them from promising practices that are not yet universal, and translates the common ground into a minimum reusable project structure.
 
 ## Central Finding
 

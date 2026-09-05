@@ -1,7 +1,11 @@
 # OpenAI Harness Guidance Review
 
+**Document type:** Workflow case study
 **Status:** Completed source review
 **Reviewed:** 2026-08-22
+
+**Used by:** [Case study synthesis](../reports/case-study-synthesis.md) and
+[common-pattern report](../reports/common-patterns.md)
 
 ## Sources and Scope
 

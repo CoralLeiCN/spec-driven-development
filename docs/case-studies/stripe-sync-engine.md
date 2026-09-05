@@ -1,9 +1,13 @@
 # Stripe Sync Engine Review
 
+**Document type:** Workflow case study
 **Status:** Completed source and history review
 
 **Reviewed:** 2026-08-23
 **Source:** [Stripe Sync Engine at commit `93321ab`](https://github.com/stripe/sync-engine/tree/93321ab3644d5460213725abe0595247c403eb46)
+
+**Used by:** [Case study synthesis](../reports/case-study-synthesis.md) and
+[common-pattern report](../reports/common-patterns.md)
 
 ## Scope
 

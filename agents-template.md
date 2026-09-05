@@ -74,7 +74,7 @@ the gap. Do not invent product requirements while coding.
 ## Implementation Discipline
 
 - When the product is a full-stack application with a Python backend, use the
-  [`backend/` + `frontend/` reference layout](docs/recommended-layout.md#python-backend-full-stack-implementation-layout)
+  [`backend/` + `frontend/` reference layout](docs/reports/recommended-layout.md#python-backend-full-stack-implementation-layout)
   derived from FastAPI's official full-stack template. Keep application code,
   dependencies, lifecycle scripts, and tests inside the owning component; keep
   cross-stack orchestration at the repository root; and identify generated API

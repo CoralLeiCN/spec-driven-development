@@ -1,5 +1,6 @@
 # GPT-5.6 Sol Guidance and Practitioner Pitfalls
 
+**Document type:** Supporting report (not derived from the workflow case studies)
 **Status:** Supporting research for the agent template
 **Reviewed:** 2026-08-31
 
@@ -185,7 +186,7 @@ scope rather than prescribing every step.
 
 The adopted wording is in [`agents-template.md`](../../agents-template.md) and
 the workflow is in the
-[`recommended document layout`](../recommended-layout.md).
+[`recommended document layout`](recommended-layout.md).
 
 ## What the Template Deliberately Excludes
 

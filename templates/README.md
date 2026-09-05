@@ -15,7 +15,7 @@ sections only when the repository's proportional change policy permits it.
 | [`adr.md`](adr.md) | `docs/decisions/ADR-NNNN-short-name.md` | Significant durable technical decision |
 
 First adopt and customize the core paths in the
-[recommended document layout](../docs/recommended-layout.md), including the
+[recommended document layout](../docs/reports/recommended-layout.md), including the
 documentation map, change policy, product truth, and canonical operations
 commands. Then copy [`../agents-template.md`](../agents-template.md) to the
 target repository as `AGENTS.md`, replace its placeholders and links, and keep

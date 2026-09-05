@@ -1,9 +1,13 @@
 # Agent Rumble Review
 
+**Document type:** Workflow case study
 **Status:** Completed source review
 
 **Reviewed:** 2026-08-22
 **Source snapshot:** [`CoralLeiCN/Agent-Rumble` at `56024b7`](https://github.com/CoralLeiCN/Agent-Rumble/tree/56024b70244ff4f76ff137a37360a9d422c09471)
+
+**Used by:** [Case study synthesis](../reports/case-study-synthesis.md) and
+[common-pattern report](../reports/common-patterns.md)
 
 ## Scope
 

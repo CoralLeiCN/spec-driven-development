@@ -5,11 +5,11 @@ This repository is a reference implementation and reusable template for spec-dri
 ## Documentation
 
 - [Documentation map](docs/README.md)
-- [Recommended spec-driven document layout](docs/recommended-layout.md)
+- [Recommended spec-driven document layout](docs/reports/recommended-layout.md)
 - [`AGENTS.md` template](agents-template.md)
 - [Feature-packet and ADR templates](templates/README.md)
-- [Research review and synthesis](docs/research/README.md)
-- [Python backend full-stack layout review](docs/research/full-stack-fastapi-template.md)
+- [Case studies](docs/case-studies/README.md)
+- [Reports and their case-study inputs](docs/reports/README.md)
 
 ## References
 
