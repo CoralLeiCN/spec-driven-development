@@ -1,7 +1,10 @@
 # Research for SPEC-NNNN
 
-This file contains non-binding evidence. Accepted scope belongs in `spec.md`;
-accepted significant decisions belong in an ADR or the plan.
+This optional file contains non-binding evidence. Accepted outcomes and
+constraints belong in `intent.md`; detailed behavior and scope belong in
+`spec.md`. Technical decisions belong in the plan, or an optional ADR when a
+critical feature or substantial research/discussion needs a standalone record.
+Research does not automatically require an ADR.
 
 ## Questions
 

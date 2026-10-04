@@ -12,8 +12,10 @@ and link to them here.
 
 `<project name>` exists to `<one-sentence outcome>`. Preserve `<most important
 invariant or trust boundary>`. The repository uses spec-driven development:
-approved specifications define intended behavior, plans define the approach,
-tasks track execution, and validation records the evidence.
+approved intent and specifications define requirements, plans define the
+approach, tasks track execution, and validation records the evidence. Every
+behavior-changing feature packet requires `intent.md` and `spec.md`; ADRs are
+optional records for decisions that need a standalone rationale.
 
 Start with [the documentation map](docs/README.md). Follow a nearer
 `AGENTS.md` when working in its subtree; it may specialize local commands and
@@ -21,18 +23,23 @@ invariants but may not weaken repository-wide safety or product constraints.
 
 ## Sources of Truth
 
-Process instructions govern how work is done; specifications govern what the
-product must do. Requirements own stakeholder outcomes and constraints. The
-current product specification owns current required behavior. A `ready`,
-`implementing`, or `validating` feature spec owns its approved behavioral delta.
-Accepted ADRs own significant technical rationale. Architecture documents own
-the current structural description. Plans own delivery approach, tasks own
+Process instructions govern how work is done. Product requirements own stable
+stakeholder outcomes and constraints; the current product specification owns
+current required behavior. Each feature packet's `intent.md` owns its problem,
+desired outcome, and stakeholder constraints; `spec.md` owns detailed behavior,
+scope, and acceptance criteria. Both are required and reviewed together under
+the spec's revision and approval. A `ready`, `implementing`, or `validating`
+packet owns its approved requirements delta.
+
+Technical rationale belongs in the plan or, when useful, an optional accepted
+ADR. ADRs do not create product requirements. Architecture documents own the
+current structural description. Plans own delivery approach, tasks own
 execution state, and validation owns evidence.
 
 Plans, tasks, research, review findings, code, tests, and agent-created notes do
 not create requirements or approve themselves. A coding agent may draft an
-artifact but may not approve its own spec, ADR, compatibility break, waiver, or
-material risk decision.
+artifact but may not approve its own intent/spec, ADR when used, compatibility
+break, waiver, or material risk decision.
 
 Do not use existing code to silently override documented intent. If
 authoritative artifacts conflict, record the conflict in the active feature
@@ -59,17 +66,18 @@ the decision boundary.
    local instruction files relevant to the change.
 2. Classify the change using `docs/governance/change-policy.md`.
 3. For behavior-changing work, locate the active packet under `docs/specs/` and
-   confirm that its `packet_status` is `ready`, its blocking questions are
-   resolved, its approval matches the current `spec_revision`, and its plan
-   covers the requested work.
+   confirm that `intent.md` and `spec.md` exist, its `packet_status` is `ready`,
+   its blocking questions are resolved, its approval covers both files at the
+   current `spec_revision`, and its plan covers the requested work.
 4. Read the linked acceptance criteria, non-goals, expected file scope, risks,
    and verification commands before implementation.
 5. Inspect the working tree and preserve unrelated human or agent changes.
    Establish a baseline with the narrowest relevant documented check when
    practical.
 
-If a required spec or decision is missing, draft the missing artifact or report
-the gap. Do not invent product requirements while coding.
+If required intent, spec, or decision approval is missing, draft the missing
+content or report the gap. An absent optional ADR is not a gap. Do not invent
+product requirements while coding.
 
 ## Implementation Discipline
 
@@ -79,8 +87,8 @@ the gap. Do not invent product requirements while coding.
   dependencies, lifecycle scripts, and tests inside the owning component; keep
   cross-stack orchestration at the repository root; and identify generated API
   clients and runtime artifacts. Adapt framework-specific internals as needed.
-  Do not introduce a different top-level layout without an approved project
-  constraint or ADR.
+  Document and obtain approval for a different top-level layout in the plan
+  or an optional ADR, within approved project constraints.
 - Implement the smallest coherent change that satisfies the approved
   acceptance criteria. Reuse established components and patterns.
 - Do not add speculative abstractions, parallel frameworks, unrelated cleanup,
@@ -135,25 +143,31 @@ Record information in its single authoritative home:
 | Information | Location |
 | --- | --- |
 | Stable product behavior | `docs/product/specification.md` or `docs/product/specification/` |
+| Required feature problem, desired outcome, and stakeholder constraints | `docs/specs/<SPEC-ID>/intent.md` |
 | Proposed behavior, scope, and acceptance criteria | `docs/specs/<SPEC-ID>/spec.md` |
 | Evidence and alternatives not yet accepted | `research.md` in the packet |
-| Implementation approach and local trade-offs | `plan.md` in the packet |
+| Implementation approach and technical decision rationale | `plan.md` in the packet, linking an optional ADR when used |
 | Deferred adjacent findings and follow-ups | `plan.md` in the packet |
 | Resumable progress and blockers | `tasks.md` in the packet |
 | Durable human clarifications, dispositions, and approvals | `reviews.md` in the packet |
 | Acceptance evidence, waivers, and residual risks | `validation.md` in the packet |
-| Significant cross-cutting or costly-to-reverse choice | `docs/decisions/ADR-*.md` |
+| Optional standalone rationale for a critical feature or substantial research/discussion | `docs/decisions/ADR-*.md` |
 | Current implemented structure and operating procedure | `docs/architecture/` and `docs/operations/` |
 | External sources and non-binding analysis | `references/` and packet `research.md` |
 
 Record a decision in the same change that depends on it:
 
-- Change the spec and add a linked review entry when human input changes scope,
-  behavior, acceptance criteria, or a non-goal.
-- Propose an ADR and obtain its required acceptance before implementing a
-  decision that is cross-cutting, security-sensitive, externally visible,
-  expensive to reverse, or likely to matter to future work.
-- Put a bounded, reversible implementation choice in the plan's decision log.
+- Update intent or spec in its owning section and add a linked review entry
+  when human input changes the agreed outcome, constraints, scope, behavior,
+  acceptance criteria, or a non-goal. Normative edits to either file increment
+  `spec_revision` and return the packet to `in_review`.
+- Keep technical choices in the plan's decision log by default. Use an ADR
+  only when a critical feature or a decision involving substantial research or
+  discussion benefits from a standalone record of rationale, alternatives, and
+  consequences. Research or discussion alone does not require an ADR.
+- Obtain required approval for material trade-offs wherever they are recorded.
+  If an ADR is used, obtain its acceptance before dependent implementation and
+  link to it from the plan. Do not duplicate the rationale or create empty ADRs.
 - Put failures and blockers in tasks; put proof, approved waivers, and residual
   risk in validation.
 

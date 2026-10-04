@@ -1,6 +1,7 @@
 ---
 id: SPEC-NNNN
 title: <outcome-focused title>
+intent: intent.md
 spec_revision: 1
 # Allowed: draft, in_review, ready, implementing, validating, complete, paused, abandoned, superseded
 packet_status: draft
@@ -18,13 +19,15 @@ last_reviewed: YYYY-MM-DD
 
 # SPEC-NNNN: <Title>
 
-## Outcome
+## Intent
 
-<Who should be able to achieve what observable outcome, and why it matters.>
+Read the companion [intent](intent.md) for the problem, desired outcome, and
+stakeholder constraints. This required spec defines the behavior and observable
+criteria that satisfy that intent; link to its rationale instead of repeating it.
 
 ## Context
 
-<Baseline behavior, evidence, and problem. Link rather than duplicate current
+<Baseline behavior and relevant evidence. Link rather than duplicate current
 product and architecture documents.>
 
 ## Scope
@@ -74,7 +77,9 @@ constraints. Use `None` when there is no effect.>
 
 ## Approval
 
-- Approval event: <link to the canonical HIN-NNNN-NN entry approving this spec_revision>
+- Approval event: <link to the canonical HIN-NNNN-NN entry approving intent.md and this spec at spec_revision>
 
 Increment `spec_revision` and reset `packet_status` to `in_review` when a
-normative edit changes behavior, scope, criteria, constraints, or non-goals.
+normative edit to intent or spec changes the agreed outcome, behavior, scope,
+criteria, constraints, or non-goals. An ADR is optional and is not a prerequisite
+for spec approval.

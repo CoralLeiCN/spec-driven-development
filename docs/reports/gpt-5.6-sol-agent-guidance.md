@@ -91,8 +91,10 @@ larger pull requests, while an
 praises the model's intelligence but describes severe overengineering and poor
 prioritization. These are anecdotes, not measured population-level behavior.
 
-**Template response:** accepted specs and ADRs alone create requirements and
-durable decisions. Plans, reviews, tests, generated files, and agent-authored
+**Template response:** approved intent and specs define feature requirements.
+Technical rationale belongs in plans or optional ADRs for critical features or
+decisions involving substantial research or discussion. ADRs do not create
+product requirements. Plans, reviews, tests, generated files, and agent-authored
 notes cannot approve themselves. Define non-goals and expected change surface,
 inspect the diff against them, require an independent basis before adding new
 infrastructure or policy, and stop when scoped acceptance passes.
@@ -175,7 +177,7 @@ scope rather than prescribing every step.
 | --- | --- |
 | Old exhaustive prompts cause overplanning | Lean root instructions; one statement per rule; progressive disclosure |
 | Large or speculative changes | Ready spec, non-goals, expected change surface, diff review, explicit stop condition |
-| Agent-created governance becomes authority | Ownership map; human approval; specs/ADRs cannot self-promote |
+| Agent-created governance becomes authority | Ownership map; human approval; intent/specs and optional ADRs cannot self-promote |
 | Adjacent findings consume delivery | Blocker-versus-follow-up rule; no automatic investigation or fix |
 | Repeated command/review loops | Evidence-based retries; no repeat without changed state or new failure |
 | Nested agents multiply cost/context | Bounded independent delegation; no recursive delegation by default; central integration |

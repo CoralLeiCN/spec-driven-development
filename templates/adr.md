@@ -11,10 +11,17 @@ related_specs: []
 
 # ADR-NNNN: <Title>
 
+This is an optional record for a critical feature or a technical decision
+involving substantial research or discussion that needs a standalone rationale.
+Do not create one for every feature, research task, or discussion. Requirements
+belong in `intent.md` and `spec.md`; ordinary technical choices belong in the
+plan. When using this record, link to it instead of duplicating its rationale.
+
 ## Context
 
-<Decision drivers, constraints, and evidence. Link to the feature spec and
-research; do not duplicate them.>
+<Why this decision warrants a separate record; decision drivers, constraints,
+and evidence. Link to intent, spec, and relevant research or review outcomes;
+do not duplicate them.>
 
 ## Decision
 

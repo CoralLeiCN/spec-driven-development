@@ -46,8 +46,8 @@ The four studies converge on a closed loop rather than one prescribed folder str
 
 The strongest combined design is a hybrid:
 
-1. Preserve global, stable sources of truth for principles, stakeholder requirements, current product behavior, accepted architecture decisions, and current architecture.
-2. Give every behavior-changing change a self-contained feature packet containing its reviewed spec, plan, resumable tasks, durable human review outcomes, and validation evidence.
+1. Preserve global, stable sources of truth for principles, stakeholder requirements, current product behavior, current architecture, and accepted architecture decisions when separate records are useful.
+2. Give every behavior-changing change a self-contained feature packet containing required intent and spec, with a plan, resumable tasks, durable human review outcomes, and validation evidence proportional to the change. ADRs are optional for critical features or decisions involving substantial research or discussion that need a standalone rationale.
 3. Keep the root `AGENTS.md` short and operational. Point to authoritative documents and put component-specific rules in local instruction files.
 4. Use stable identifiers to trace requirements to acceptance criteria, tasks, tests, and validation evidence.
 5. Treat the repository as the durable record. Capture the outcome of useful human input, not full conversation transcripts.

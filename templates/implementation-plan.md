@@ -10,7 +10,8 @@ updated: YYYY-MM-DD
 
 ## Approved Outcome and Non-Goals
 
-- Outcome: <one-sentence link-backed summary>
+- Outcome: <link to the desired outcome in intent.md>
+- Requirements and acceptance: <links to the relevant sections of spec.md>
 - Non-goals: <links or concise list from spec.md>
 
 ## Current Baseline
@@ -41,9 +42,11 @@ continues.
 
 ## Decision Log
 
-Use this table only for bounded, reversible choices. Create an ADR for a
-cross-cutting, externally visible, security-sensitive, or costly-to-reverse
-decision.
+Use this table for technical choices within the approved intent and spec. An
+ADR is optional: use one only when a critical feature or a decision involving
+substantial research or discussion benefits from a standalone record. If one
+is used, link to it here instead of copying its rationale. Material trade-offs
+still need the approval required by the change policy, wherever recorded.
 
 | Date | Choice | Rationale | Alternatives | Consequence |
 | --- | --- | --- | --- | --- |

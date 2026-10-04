@@ -22,3 +22,6 @@ disposition and explicitly state that no authoritative artifact changed.
 For an approval event, include the exact artifact revision or scope and any
 conditions in `Input`, and link to the approved artifact. This entry is the
 canonical approval record; other files link here instead of copying it.
+The `spec ready` gate covers both `intent.md` and `spec.md` at the stated
+`spec_revision`. ADRs are optional; link to their acceptance metadata only when
+one is used.
