@@ -40,7 +40,8 @@ derived document:
 - [`agents-template.md`](../agents-template.md) is the lean root instruction
   contract to copy into a target repository as `AGENTS.md`.
 - [Reusable document templates](../templates/README.md) provide concrete
-  feature-spec, research, plan, task, review, validation, and ADR files.
+  required intent and feature-spec files, supporting plan, task, review, and
+  validation files, and optional research and ADR files.
 - The [source reference index](../references/README.md) contains external links
   and citation metadata only.
 

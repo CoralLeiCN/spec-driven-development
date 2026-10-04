@@ -1,6 +1,10 @@
 # spec-driven-development
 
-This repository is a reference implementation and reusable template for spec-driven development. It defines a consistent project layout and workflow in which every change begins with a reviewed specification describing the problem, intended outcomes, functional and non-functional requirements, constraints, assumptions, edge cases, and measurable acceptance criteria before implementation choices are made. Each specification is refined into a technical plan, traceable tasks, tests, and validation gates, following a structured **Spec → Plan → Tasks → Implement → Validate → Integrate** lifecycle. Important human input—including clarifications, approvals, trade-offs, rejected alternatives, and changes of direction—remains versioned alongside the work, while significant decisions are recorded with their context, rationale, consequences, owner, and status; accepted decisions are superseded rather than silently rewritten. The goal is to make development understandable, auditable, testable, and resumable, so that humans and coding agents implement agreed intent rather than relying on undocumented assumptions or transient conversations.
+This repository is a reference implementation and reusable template for spec-driven development. Every behavior-changing feature packet requires **intent** and **spec**: `intent.md` captures the problem, intended users, desired outcome, and stakeholder constraints; `spec.md` defines the required behavior, scope, edge cases, and measurable acceptance criteria. They are reviewed together before implementation.
+
+The workflow is **Intent → Spec → Plan → Tasks → Implement → Validate → Integrate**. Plans, tasks, reviews, and validation keep delivery traceable and resumable, with detail proportional to the change. Important human input remains versioned alongside the work.
+
+**ADRs are optional.** Use a separate Architecture Decision Record only when a critical feature or a decision involving substantial research or discussion benefits from a durable record of alternatives, rationale, and consequences. Ordinary technical decisions stay in the plan. Research or discussion alone does not require an ADR, and an ADR does not create product requirements. When an accepted ADR is replaced, supersede it with a linked record to preserve its history.
 
 ## Documentation
 

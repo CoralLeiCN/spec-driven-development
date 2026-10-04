@@ -13,7 +13,7 @@ declared evidence passes.
 
 Update at phase boundaries or material decisions, not after every command.
 
-- Objective and authority: <links to ready spec, approval, and applicable ADRs>
+- Objective and authority: <links to intent, ready spec, and approval; include an accepted ADR only if applicable>
 - Scope and exclusions: <links to the spec sections>
 - Completed: <task IDs>
 - Pending: <task IDs>

@@ -115,8 +115,8 @@ Copy the **responsibilities and boundaries**, not every sample technology or
 file name. A project may replace React, Bun, SQLModel, PostgreSQL, Alembic,
 Traefik, or React Email while retaining the layout. A framework that imposes a
 different internal Python package structure may specialize `backend/app/`.
-Diverge from the top-level boundary only when an approved constraint or ADR
-records why another structure is better for that project.
+Document and obtain approval for a different top-level boundary in the plan or
+an optional ADR, within approved project constraints.
 
 ## Evidence
 
